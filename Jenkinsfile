@@ -21,7 +21,7 @@ pipeline {
 
 		stage('Deploy') {
 			steps {
-			    sh "./mvnw jar:jar deploy:deploy"
+			    sh "./mvnw -e jar:jar deploy:deploy"
 			}
 		}
 	}
